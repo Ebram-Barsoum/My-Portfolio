@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ebram Barsoum — Portfolio
 
-## Getting Started
+A personal portfolio showcasing my projects, skills, and experience as a Next.js and React.js developer.
 
-First, run the development server:
+🌐 **Live:** [yourname.dev](https://yourname.dev)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Tech Stack
+
+- **Framework** — Next.js 16 (App Router).
+- **Language** — TypeScript.
+- **Styling** — Tailwind CSS.
+- **Animation** — GSAP.
+- **Typing Animattion** — React typing animation.
+- **Froms & Validation** — React-hook form & zod.
+- **Email** — Nodemailer + React Email.
+- **Deployment** — Vercel.
+
+---
+
+## Features
+
+- Responsive design across all devices.
+- Projects showcase with filteration.
+- Contact form with client & server-side validation and email delivery.
+- Smooth animations with GSAP & React typing animation.
+
+---
+
+## Project Structure
+
+```
+src/
+├── app/                    # Next.js app router pages
+├── features/
+│ ├── about/
+│ │ ├── components/
+│ │ └── index.ts
+│ ├── contact/
+│ │ ├── actions/            # Server actions
+│ │ ├── components/         # ContactForm component
+│ │ ├── config/             # Nodemailer transporter
+│ │ ├── emails/             # React Email templates
+│ │ ├── hooks/              # useContact hook
+│ │ ├── schema/             # Zod schema
+│ │ ├── types/              # ContactState type
+│ │ └── utils/              # sendEmail utility
+│ ├── home/
+│ │ ├── components/         # Component related to home
+│ │ └── index.ts
+│ └── projects/
+│ ├── components/
+│ └── index.ts
+└── shared/
+├── animation/              # GSAP animation wrapper.
+├── config/                 # Navigation, projects filter, buttons, and social links.
+├── data/                   # Education & projects & skills static data.
+├── providers/              # theme provider
+├── types/
+└── ui/                     # Reusable UI Component across the entire project.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file in the root:
 
-## Learn More
+```bash
+SENDER_EMAIL=your_gmail@gmail.com
+SENDER_PASSWORD=your_app_password
+CONTACT_EMAIL=where_you_receive_emails@gmail.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+git clone https://github.com/Ebram-Barsoum/My-Portfolio.git
+cd My-Portfolio
+npm install
+```
