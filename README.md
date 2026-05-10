@@ -2,7 +2,7 @@
 
 A personal portfolio showcasing my projects, skills, and experience as a Next.js and React.js developer.
 
-🌐 **Live:** [yourname.dev](https://yourname.dev)
+🌐 **Live:** [https://ebram-barsoum.vercel.app/](https://ebram-barsoum.vercel.app/)
 
 ---
 
