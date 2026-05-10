@@ -29,10 +29,11 @@ export default function Social({ links, variant = "label", className = "" }: Soc
                                 className="text-sm hover:text-primary"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label={label}
                             >
                                 {
                                     (variant === "icon" && Icon) ?
-                                        <Icon className="text-xl" /> :
+                                        <Icon className="text-xl" aria-hidden={true} /> :
                                         label
                                 }
                             </Link>
