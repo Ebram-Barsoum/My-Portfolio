@@ -11,7 +11,15 @@ import AnimationWrapper from "@/shared/animation/AnimationWrapper";
 
 export const metadata: Metadata = {
     title: "Projects",
+    description: `
+        A collection of multi-language and multi-vendor e-commerce platforms, real-time dashboards, and responsive marketing websites built with modern technologies such as React.js, Next.js, TypeScript, Tailwind CSS, and Node.js.
+        Each project implemented role-based access control and refresh token-based authentication.
+        Integrated Socket.io for real-time support chat and Recharts for interactive analytics visualizations.
+        End-to-end developed by Ebram Barsoum.
+    `,
 };
+
+export const dynamic = "force-static";
 
 export default async function ProjectsPage({ searchParams }: { searchParams: Promise<{ [CATEGOTY_PARAM]: string }> }): Promise<JSX.Element> {
 
