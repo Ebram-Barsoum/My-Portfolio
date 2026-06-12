@@ -8,6 +8,7 @@ import AnimationWrapper from "@/shared/animation/AnimationWrapper";
 
 export const metadata: Metadata = {
     title: "Contact",
+    description: "Get in touch with Ebram Barsoum for freelance opportunities, web development projects, technical consultations, or collaboration on React, Next.js, and full-stack applications.",
 };
 
 export default function ContactPage(): JSX.Element {
